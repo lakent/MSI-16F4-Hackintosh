@@ -24,7 +24,7 @@
 | 规格     | 详细信息                                     |
 | -------- | ---------------------------------------- |
 | 电脑型号 | 微星16F4 15.6'' |
-| 主板 | 微星 MSI-16F4 |
+| 主板 | 微星 MS-16F4 |
 | 处理器 | 英特尔 酷睿　i7-4700MQ Haswell |
 | 内存 | 三星 8GB DDR3L 1600 MHz |
 | 硬盘 |光宝　LITEON LMH-256V2M |
@@ -58,9 +58,6 @@
  - DVMT Pre-Allocated: 64MB 分配给DVMT所需要内存大小
 </details>
 
-
-
-
 ## 启动引导
 
 - [ OpenCore 0.80 RELEASE ](https://github.com/acidanthera/OpenCorePkg)
@@ -75,9 +72,8 @@
 | WhateverGreen | 1.6.0 |
 | SMCBatteryManager | 1.2.9 |
 | SMCProcessor| 1.5.8 |
-| [AppleHDADisabler] | 1.0.9 |
-| [VoodooHDA] | 2.9.9 |
-| AtherosE2200Ethernet | 2.2.2|
+| [AppleALC]| 1.7.1 |
+| [AtherosE2200Ethernet] | 2.2.2|
 | [AirportItlwm] | 2.2.0-alpha | 
 | [IntelBluetoothFirmware] | 2.1.0 |
 | [BlueToolFixup] | 2.6.1 |
@@ -89,15 +85,12 @@
 | [VoodooRMI] | 1.3.4 |
 | BrightnessKeys| 1.0.2 |
 
-
-
 ## 设备运行情况
 ### 正常工作
 - 核心显卡
 - 无线网卡
 - 有线网卡
-- 声音（安装到系统）
-  > [WARNING ➤ For now the kext not working injected from bootloader on BS 11.3 and later](https://github.com/chris1111/VoodooHDA-OC)
+- 声音（alcid=4）
 - 麦克风
 - 摄像头
 - 蓝牙
@@ -109,20 +102,20 @@
 ![Hackintool info](Images/Hackintool.png)
 ### 不正常工作
 - 睡眠 (唤醒比较困难，`OC` 下唤醒方法是：`电源键`唤醒)
-- 触摸板 (支持多指手势；左右按键不可用)
-- MSI EFP USB (已禁用)
+- 触摸板 (支持点击与多指手势；左右按键不可用)
+- **MSI EFP USB** (已禁用)
 - **独立显卡** 无法工作
 - 风扇转速传感器
 - 关闭　CSM　开机花屏（休眠后唤醒恢复）
 ### 未测试
 - 电源管理
-- HDMI接口
-- **HDMI** 开机后第一次接上时可能无法工作，需要重新插拔或者关上盖子等五秒后打开盖子
+- **HDMI接口** 开机后第一次接上时可能无法工作，需要重新插拔或者关上盖子等五秒后打开盖子
 - DRM
 - 隔空投送 / 接力 / 随航
 - FaceTime / iMessage
 ## 鸣谢
 - 开发者
+- 社区成员
 - [黛码小哥哥](https://www.youtube.com/watch?v=k1CrQnPU7yM)
 - [黑苹果屋](http://imacos.top/2021/03/23/0906/)
 - [黑果小兵部落格](https://blog.daliansky.net/) 
@@ -135,15 +128,17 @@
 - [tonymaiyadx86](https://www.tonymacx86.com)
 - [xjn](https://blog.xjn819.com/)
 - [xusos](https://github.com/xusos/Hackintosh-EFI) 
-- 
+
 
 [CtlnaAHCIPort]: https://github.com/dortania/OpenCore-Install-Guide/blob/master/extra-files/CtlnaAHCIPort.kext.zip "dortania guides repo"
+[AppleALC]: https://github.com/acidanthera/AppleALC "AppleALC repo"
 [AppleHDADisabler]: https://www.tonymacx86.com/threads/applehda-disabler-kext.1602/ "AppleHDADisabler"
 [VoodooHDA]: https://sourceforge.net/projects/voodoohda/ "VoodooHDA repo"
 [AirportItlwm]: https://github.com/OpenIntelWireless/itlwm "itlwm repo"
 [IntelBluetoothFirmware]: https://github.com/OpenIntelWireless/IntelBluetoothFirmware ""
 [BlueToolFixup]: https://github.com/acidanthera/BrcmPatchRAM "BlueToolFixup repo"
 [USBPorts]: https://github.com/USBToolBox/tool "USBToolBox repo"
+[AtherosE2200Ethernet]: https://github.com/Mieze/AtherosE2200Ethernet "AtherosE2200Ethernet"
 [RealtekCardReader]: https://github.com/0xFireWolf/RealtekCardReader "RealtekCardReader repo"
 [RealtekCardReaderFriend]: https://github.com/0xFireWolf/RealtekCardReaderFriend "RealtekCardReaderFriend repo"
 [HoRNDIS]: https://github.com/jwise/HoRNDIS "HoRNDIS repo"

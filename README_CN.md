@@ -82,7 +82,6 @@
 | [RealtekCardReaderFriend] | 1.0.2 |
 | [HoRNDIS] | 9.2 |
 | VoodooPS2Controller | 2.2.8 |
-| [VoodooRMI] | 1.3.4 |
 | BrightnessKeys| 1.0.2 |
 
 ## 设备运行情况

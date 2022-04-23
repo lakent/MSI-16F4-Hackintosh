@@ -54,11 +54,11 @@ Compliancy: UEFI 2.3.1; PI 1.2
 
 Project Version: 16F4A 0.37 x64
 ### 关闭
-<details><summary>快速启动 | Fast Boot</summary>
+<details><summary>快速启动 Fast Boot</summary>
 
 - Boot -> Fastboot [**disabled**]
 </details>
-<details><summary>CFG 锁 (MSR 0xE2 写入保护) | CFG Lock (MSR 0xE2 write protection)</summary>
+<details><summary>CFG 锁 (MSR 0xE2 写入保护) CFG Lock (MSR 0xE2 write protection)</summary>
 
 - Advanced -> Cpu Information -> CFG Lock [**disabled**]
 </details>

@@ -47,17 +47,20 @@
 ## BIOS 设置
 ### BIOS 信息
 Bios Vendor: American Megatrends
+
 Core Version: 4.6.5.4
+
 Compliancy: UEFI 2.3.1; PI 1.2
+
 Project Version: 16F4A 0.37 x64
 ### 关闭
 <details><summary>快速启动 | Fast Boot</summary>
 
-- Boot -> Fastboot **disabled**
+- Boot -> Fastboot [**disabled**]
 </details>
 <details><summary>CFG 锁 (MSR 0xE2 写入保护) | CFG Lock (MSR 0xE2 write protection)</summary>
 
-- Advanced -> Cpu Information -> CFG Lock **disabled**
+- Advanced -> Cpu Information -> CFG Lock [**disabled**]
 </details>
 
 >[This must be off, if you can't find the option then Enabled AppleXcpmCfgLock under Kernel -> Quirks. Your hack will not boot with CFG-Lock Enabledd](https://dortania.github.io/OpenCore-Install-Guide/config-laptop.plist/haswell.html#disable)

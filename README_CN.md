@@ -5,11 +5,15 @@
 [![macOS](https://img.shields.io/badge/macOS-12.3.1-c62eb8)](https://www.apple.com.cn/macos/monterey/)
 ![Intel](https://img.shields.io/badge/Intel-Haswell-0071c5)
 ![MSI](https://img.shields.io/badge/MSI-Laptop-ff0000)
+
 ## 目录
 - [微星 16F4 笔记本 黑苹果 OpenCore EFI](#微星-16f4-笔记本-黑苹果-opencore-efi)
   - [目录](#目录)
   - [电脑配置](#电脑配置)
   - [BIOS 设置](#bios-设置)
+    - [BIOS 信息](#bios-信息)
+    - [关闭](#关闭)
+    - [启用](#启用)
   - [启动引导](#启动引导)
   - [内核扩展](#内核扩展)
   - [设备运行情况](#设备运行情况)
@@ -41,30 +45,69 @@
 
 
 ## BIOS 设置
-<details><summary>关闭</summary>
+### BIOS 信息
+Bios Vendor: American Megatrends
+Core Version: 4.6.5.4
+Compliancy: UEFI 2.3.1; PI 1.2
+Project Version: 16F4A 0.37 x64
+### 关闭
+<details><summary>快速启动 | Fast Boot</summary>
 
- - Fast Boot	快速启动
- - Secure Boot 安全启动
- - CFG Lock (MSR 0xE2 write protection)	CFG 锁 (MSR 0xE2 写入保护)
+- Boot -> Fastboot **disabled**
 </details>
-<details><summary>启用</summary>
+<details><summary>CFG 锁 (MSR 0xE2 写入保护) | CFG Lock (MSR 0xE2 write protection)</summary>
 
- - UEFI
- - SATA Mode: AHCI
- - CSM	兼容性支持模块
- - Hyper Threading	处理器超线程
- - EHCI Hand-off 接手 EHCI 控制
- - XHCI Hand-off 接手 XHCI 控制
- - Intel 虚拟化技术
- - DVMT Pre-Allocated: 64MB 分配给DVMT所需要内存大小
+- Advanced -> Cpu Information -> CFG Lock **disabled**
+</details>
+
+>[This must be off, if you can't find the option then Enabled AppleXcpmCfgLock under Kernel -> Quirks. Your hack will not boot with CFG-Lock Enabledd](https://dortania.github.io/OpenCore-Install-Guide/config-laptop.plist/haswell.html#disable)
+### 启用
+<details><summary>英特尔虚拟化技术 Intel Virtulalization Technology</summary>
+
+- Advanced -> Cpu Information -> Intel Virtulalization Technology [**Enabled**]
+</details>
+<details><summary> 英特尔® 超线程 (HT) 技术 Hyper Threading </summary>
+
+- Advanced -> Cpu Information -> Hyper-threading [**Enabled**]
+</details>
+
+<details><summary> 英特尔® 处理器执行禁用®位 Execute Disable Bit </summary>
+
+- Advanced -> Cpu Information -> Execute Disable Bit [**Enabled**]
+</details>
+
+<details><summary> 接手 EHCI 控制 EHCI Hand-off </summary>
+
+- Advanced -> USB Configuration -> EHCI Hand-off [**Enabled**]
+</details>
+
+<details><summary> 接手 XHCI 控制 XHCI Hand-off </summary>
+
+- Advanced -> USB Configuration -> XHCI Hand-off [**Enabled**]
+</details>
+
+<details><summary> UEFI CSM 兼容性支持模块 UEFI with CSM </summary>
+
+- Boot -> Boot mode select [**UEFI with CSM**]
+</details>
+
+>**必须**开启 CMS,否则导致开机花屏
+
+<details><summary> 分配给DVMT所需要内存大小 DVMT Pre-Allocated 64MB </summary>
+
+- Advanced -> System Agnet(SA) configuration -> Graphics Configruration -> DVMTpre-Allocated [**64MB**]
+</details>
+ 
+<details><summary> SATA Mode: AHCI </summary>
+
+- Advanced -> SATA Mode Selection **AHCI**<br>
+- Advanced- > SATA Information -> SATA Mode Selection **AHCI**
 </details>
 
 ## 启动引导
-
 - [ OpenCore 0.80 RELEASE ](https://github.com/acidanthera/OpenCorePkg)
 
 ## 内核扩展
-
 | Components    | Version | 
 | ------------- | ------ |
 | Lilu  | 1.6.0 | 
@@ -102,17 +145,19 @@
 ![Hackintool info](Images/Hackintool.png)
 ### 不正常工作
 - 睡眠 (唤醒比较困难，`OC` 下唤醒方法是：`电源键`唤醒)
-- 触摸板 (支持点击与多指手势；左右按键不可用)
+- 触摸板 (支持点击与多指手势；左右实体按键不可用)
 - **MSI EFP USB** (已禁用)
 - **独立显卡** 无法工作
 - 风扇转速传感器
-- 关闭　CSM　开机花屏（休眠后唤醒恢复）
+- 关闭 CSM 后开机花屏（休眠后唤醒恢复）
 ### 未测试
 - 电源管理
-- **HDMI接口** 开机后第一次接上时可能无法工作，需要重新插拔或者关上盖子等五秒后打开盖子
+- **HDMI接口** 
+  > 开机后第一次接上时可能无法工作，需要重新插拔或者关上盖子等五秒后打开盖子
 - DRM
 - 隔空投送 / 接力 / 随航
 - FaceTime / iMessage
+
 ## 鸣谢
 - 开发者
 - 社区成员

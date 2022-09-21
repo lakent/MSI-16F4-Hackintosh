@@ -114,7 +114,7 @@ Project Version: 16F4A 0.37 x64
 | Components    | Version | 
 | ------------- | ------ |
 | [Lilu]  | 1.6.2 | 
-| VirtualSMC | 1.2.9 |
+| [VirtualSMC] | 1.3.0 |
 | [CtlnaAHCIPort] | V341.0.2 |
 | WhateverGreen | 1.6.0 |
 | SMCBatteryManager | 1.2.9 |
@@ -178,6 +178,7 @@ Project Version: 16F4A 0.37 x64
 - [xusos](https://github.com/xusos/Hackintosh-EFI) 
 
 [Lilu]: https://github.com/acidanthera/Lilu "Lilu repo"
+[VirtualSMC]: https://github.com/acidanthera/VirtualSMC "VirtualSMC repo"
 [CtlnaAHCIPort]: https://github.com/dortania/OpenCore-Install-Guide/blob/master/extra-files/CtlnaAHCIPort.kext.zip "dortania guides repo"
 [AppleALC]: https://github.com/acidanthera/AppleALC "AppleALC repo"
 [AppleHDADisabler]: https://www.tonymacx86.com/threads/applehda-disabler-kext.1602/ "AppleHDADisabler"

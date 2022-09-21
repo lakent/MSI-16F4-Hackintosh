@@ -117,8 +117,8 @@ Project Version: 16F4A 0.37 x64
 | [VirtualSMC] | 1.3.0 |
 | [CtlnaAHCIPort] | V341.0.2 |
 | [WhateverGreen] | 1.6.1 |
-| SMCBatteryManager | 1.2.9 |
-| SMCProcessor| 1.5.8 |
+| [SMCBatteryManager][VirtualSMC] | 1.3.0 |
+| SMCProcessor| 1.2.9 |
 | [AppleALC]| 1.7.1 |
 | [AtherosE2200Ethernet] | 2.2.2|
 | [AirportItlwm] | 2.2.0-alpha | 

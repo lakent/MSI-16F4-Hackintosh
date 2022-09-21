@@ -185,7 +185,7 @@ Project Version: 16F4A 0.37 x64
 [AppleHDADisabler]: https://www.tonymacx86.com/threads/applehda-disabler-kext.1602/ "AppleHDADisabler"
 [VoodooHDA]: https://sourceforge.net/projects/voodoohda/ "VoodooHDA repo"
 [AirportItlwm]: https://github.com/OpenIntelWireless/itlwm "itlwm repo"
-[IntelBluetoothFirmware]: https://github.com/OpenIntelWireless/IntelBluetoothFirmware ""
+[IntelBluetoothFirmware]: https://github.com/OpenIntelWireless/IntelBluetoothFirmware "IntelBluetoothFirmware repo"
 [BlueToolFixup]: https://github.com/acidanthera/BrcmPatchRAM "BlueToolFixup repo"
 [USBPorts]: https://github.com/USBToolBox/tool "USBToolBox repo"
 [AtherosE2200Ethernet]: https://github.com/Mieze/AtherosE2200Ethernet "AtherosE2200Ethernet"

@@ -126,7 +126,7 @@ Project Version: 16F4A 0.37 x64
 | [BlueToolFixup] | 2.6.3 |
 | [USBPorts]| 0.1.1 |
 | [RealtekCardReader] | 0.9.6 |
-| [RealtekCardReaderFriend] | 1.0.2 |
+| [RealtekCardReaderFriend] | 1.0.3 |
 | [HoRNDIS] | 9.2 |
 | VoodooPS2Controller | 2.2.8 |
 | BrightnessKeys| 1.0.2 |

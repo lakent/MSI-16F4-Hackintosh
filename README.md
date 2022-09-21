@@ -2,7 +2,7 @@
 
 # 微星 16F4 笔记本 黑苹果 OpenCore EFI
 [![OpenCore](https://img.shields.io/badge/OpenCore-0.8.4-1ac3d4)](https://github.com/acidanthera/OpenCorePkg/releases/latest)
-[![macOS](https://img.shields.io/badge/macOS-12.3.1-c62eb8)](https://www.apple.com.cn/macos/monterey/)
+[![macOS](https://img.shields.io/badge/macOS-12.6-c62eb8)](https://www.apple.com.cn/macos/monterey/)
 ![Intel](https://img.shields.io/badge/Intel-Haswell-0071c5)
 ![MSI](https://img.shields.io/badge/MSI-Laptop-ff0000)
 

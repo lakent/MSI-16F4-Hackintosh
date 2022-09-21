@@ -123,7 +123,7 @@ Project Version: 16F4A 0.37 x64
 | [AtherosE2200Ethernet] | 2.2.2|
 | [AirportItlwm] | 2.2.0-alpha | 
 | [IntelBluetoothFirmware] | 2.2.0 |
-| [BlueToolFixup] | 2.6.1 |
+| [BlueToolFixup] | 2.6.3 |
 | [USBPorts]| 0.1.1 |
 | [RealtekCardReader] | 0.9.6 |
 | [RealtekCardReaderFriend] | 1.0.2 |

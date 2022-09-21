@@ -128,7 +128,7 @@ Project Version: 16F4A 0.37 x64
 | [RealtekCardReader] | 0.9.6 |
 | [RealtekCardReaderFriend] | 1.0.3 |
 | [HoRNDIS] | 9.2 |
-| VoodooPS2Controller | 2.2.8 |
+| [VoodooPS2Controller] | 2.3.0 |
 | BrightnessKeys| 1.0.2 |
 
 ## 设备运行情况
@@ -193,3 +193,4 @@ Project Version: 16F4A 0.37 x64
 [RealtekCardReaderFriend]: https://github.com/0xFireWolf/RealtekCardReaderFriend "RealtekCardReaderFriend repo"
 [HoRNDIS]: https://github.com/jwise/HoRNDIS "HoRNDIS repo"
 [VoodooRMI]: https://github.com/VoodooSMBus/VoodooRMI "VoodooRMI repo"
+[VoodooPS2Controller]: https://github.com/acidanthera/VoodooPS2 "VoodooPS2 repo"

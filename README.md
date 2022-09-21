@@ -1,7 +1,7 @@
 [English](#TODO) | **中文**
 
 # 微星 16F4 笔记本 黑苹果 OpenCore EFI
-[![OpenCore](https://img.shields.io/badge/OpenCore-0.8.0-1ac3d4)](https://github.com/acidanthera/OpenCorePkg/releases/latest)
+[![OpenCore](https://img.shields.io/badge/OpenCore-0.8.4-1ac3d4)](https://github.com/acidanthera/OpenCorePkg/releases/latest)
 [![macOS](https://img.shields.io/badge/macOS-12.3.1-c62eb8)](https://www.apple.com.cn/macos/monterey/)
 ![Intel](https://img.shields.io/badge/Intel-Haswell-0071c5)
 ![MSI](https://img.shields.io/badge/MSI-Laptop-ff0000)
@@ -108,7 +108,7 @@ Project Version: 16F4A 0.37 x64
 </details>
 
 ## 启动引导
-- [ OpenCore 0.80 RELEASE ](https://github.com/acidanthera/OpenCorePkg)
+- [ OpenCore 0.8.4 RELEASE ](https://github.com/acidanthera/OpenCorePkg)
 
 ## 内核扩展
 | Components    | Version | 
@@ -145,6 +145,7 @@ Project Version: 16F4A 0.37 x64
 ![Control Center](Images/Control%20Center.png)
 - 声音亮度调节快捷键
 - 瑞昱USB SD读卡器
+- 隔空投送
 ![Hackintool info](Images/Hackintool.png)
 ### 不正常工作
 - 睡眠 (唤醒比较困难，`OC` 下唤醒方法是：`电源键`唤醒)
@@ -158,7 +159,7 @@ Project Version: 16F4A 0.37 x64
 - **HDMI接口** 
   > 开机后第一次接上时可能无法工作，需要重新插拔或者关上盖子等五秒后打开盖子
 - DRM
-- 隔空投送 / 接力 / 随航
+- 接力 / 随航
 - FaceTime / iMessage
 
 ## 鸣谢

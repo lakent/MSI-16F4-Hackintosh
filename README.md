@@ -119,7 +119,7 @@ Project Version: 16F4A 0.37 x64
 | [WhateverGreen] | 1.6.1 |
 | [SMCBatteryManager][VirtualSMC] | 1.3.0 |
 | [SMCProcessor][VirtualSMC]| 1.3.0 |
-| [AppleALC]| 1.7.1 |
+| [AppleALC]| 1.7.5 |
 | [AtherosE2200Ethernet] | 2.2.2|
 | [AirportItlwm] | 2.2.0-alpha | 
 | [IntelBluetoothFirmware] | 2.1.0 |
